@@ -8,9 +8,9 @@ from util.parallel import map as parallel_map
 # Get an approximation algorithm to make predictions
 
 # Get util algorithms for regression
-from util.algorithms import VoronoiMesh
-from util.algorithms import NearestNeighbor
-from util.algorithms import Delaunay
+from util.approximate import Voronoi
+from util.approximate import NearestNeighbor
+from util.approximate import Delaunay
 # Get sklearn algorithms for classification and regression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.tree import DecisionTreeRegressor
@@ -29,7 +29,7 @@ age_type = ["Age_Cat", "Age_Num"]
 
 # Algorithms for classification and regression
 classification_algorithms = [NearestNeighbor, DecisionTreeClassifier, MLPClassifier]
-regression_algorithms = [VoronoiMesh, NearestNeighbor, DecisionTreeRegressor, MLPRegressor]
+regression_algorithms = [Voronoi, NearestNeighbor, DecisionTreeRegressor, MLPRegressor]
 # Delaunay
 
 # The predictor columns
